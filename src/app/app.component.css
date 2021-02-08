@@ -1,0 +1,196 @@
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("src/assets/img/bck.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  border: 1px solid red;
+  width: 80%;
+  height: 90%;
+  margin: 0 10% 0 10%;
+  color: lightsalmon;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* -------------------------------- HEADER -------------------------------- */
+
+.header{
+  border: 1px solid blue;
+  width: 100%;
+}
+
+.header h1{
+  font-family: "Lucida Handwriting", cursive;
+  text-align: center;
+}
+
+/* -------------------------------- CONTENT -------------------------------- */
+
+.content{
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------------- CONTENT ---> LEFT-PANEL -------------------------------- */
+
+.content .left-panel{
+  height: 80%;
+  min-height: 100px;
+  flex: 1 15%;
+  margin: 1% 1% 1% 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content a{
+  padding: 3% 9%;
+  margin-top: 1%;
+  text-decoration: none;
+  font-weight: 600;
+  color: lightsalmon;
+  opacity: 0.7;
+  transition: 0.3s;
+  clip-path: circle(59% at 50% 50%);
+}
+
+.content a:hover{
+  opacity: 1;
+  clip-path: circle(100% at 50% 50%);
+  transition: 0.5s ease-in-out;
+}
+
+.cityBtn {
+  padding: 4%;
+}
+
+/* -------------------------------- CONTENT ---> CONTENT-BOX -------------------------------- */
+
+.content .content-box{
+  border: 1px solid yellow;
+  height: 80%;
+  min-height: 100px;
+  flex: 2 70%;
+  margin: 1% 1% 1% 1%;
+}
+
+/* -------------------------------- CONTENT ---> RIGHT-PANEL -------------------------------- */
+
+.content .right-panel{
+  height: 80%;
+  min-height: 100px;
+  flex: 3 15%;
+  margin: 1% 1% 1% 1%;
+}
+
+.content .right-panel img{
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+
+/* -------------------------------- BOTTOM -------------------------------- */
+
+.bottom{
+  border: 1px solid green;
+  width: 100%;
+}
+
+.bottom h3 {
+  text-align: center;
+  font-family: "Papyrus", fantasy;
+  font-weight: 900;
+  font-style: oblique;
+}
+
+/* -------------------------------- STYLISH-ADDONS -------------------------------- */
+
+.gradient-border-a, .gradient-border-b, .gradient-border-c {
+  --borderWidth: 11%;
+  background: black;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+
+.gradient-border-a:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.gradient-border-b:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg,black, rgb(130, 0, 0) 75%,gold);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 6s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.gradient-border-c:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #b90f0f, #b0c402, #a70734, #9d2ab1, #81b67c, #200404, #03302a, #abc7b2);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 12s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* -------------------------------- RESPONSIVE-FONT -------------------------------- */
+
+@media screen and (max-width:1270px) {
+  body {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  body {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width:768px) {
+  body {
+    font-size: xx-small;
+  }
+}
+

@@ -1,0 +1,47 @@
+.places{
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  list-style-type: none;
+  width: 100%;
+}
+
+.place{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.60);
+  color: bisque;
+  text-align: left;
+  padding: 2%;
+  margin-bottom: 1%;
+}
+
+.place .image{
+  width: 25%;
+}
+
+.place .name{
+  width: 20%;
+}
+
+.place .city{
+  width: 20%;
+}
+
+.place .rate{
+  width: 20%;
+}
+
+.place .moreBtn{
+  text-align: right;
+  width: 15%;
+}
+
+.place .moreBtn a{
+  border-radius: 12%;
+  padding: 8%;
+  background-color: rgba(190, 0, 0, 0.6);
+  text-decoration: none;
+  color: inherit;
+}

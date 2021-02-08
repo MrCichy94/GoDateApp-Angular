@@ -1,0 +1,9 @@
+<div class="comments" *ngIf="place">
+  <li *ngFor="let com of place.comments; index as i; first as isFirst">
+    <div class="comment">
+      user ID : {{com.id}} | rate {{com.userRate}} | {{com.place_id}}
+      <span *ngIf="isFirst"></span>
+    </div>
+  </li>
+</div>
+
