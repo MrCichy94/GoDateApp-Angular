@@ -16,7 +16,7 @@ export class CurrencyClientService {
   }
 
   public getCurrencyPlaces(): Observable<Place[]> {
-    return this.httpClient.get<Place[]>('http://localhost:8080/places?sort=rate,desc');
+    return this.httpClient.get<Place[]>('http://localhost:8080/places?sort=rate,desc&page=0&size=3');
   }
 }
 
