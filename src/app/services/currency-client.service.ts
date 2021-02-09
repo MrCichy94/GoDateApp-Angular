@@ -15,6 +15,14 @@ export class CurrencyClientService {
     return this.httpClient.get<Place>('http://localhost:8080/places/' + id);
   }
 
+  public getPlaceByCityName(city: string): Observable<Place[]>{
+    return this.httpClient.get<Place[]>('http://localhost:8080/places/pl/' + city);
+  }
+
+  public getUniqueCity(): Observable<string[]> {
+    return this.httpClient.get<string[]>('http://localhost:8080/places/unique');
+  }
+
   public getCurrencyPlaces(): Observable<Place[]> {
     return this.httpClient.get<Place[]>('http://localhost:8080/places?sort=rate,desc&page=0&size=3');
   }

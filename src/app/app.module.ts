@@ -10,6 +10,8 @@ import {PlacesComponent} from './components/places/places.component';
 import {PageNotFoundComponent} from './components/errors/page-not-found/page-not-found.component';
 import {AppRoutingModule} from './app-routing.module';
 import { CoordinatesComponent } from './components/place/coordinates/coordinates.component';
+import { LeftpanelComponent } from './components/leftpanel/leftpanel.component';
+import { ButtonsComponent } from './components/leftpanel/buttons/buttons.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CoordinatesComponent } from './components/place/coordinates/coordinates
     CommentComponent,
     PlacesComponent,
     PageNotFoundComponent,
-    CoordinatesComponent
+    CoordinatesComponent,
+    LeftpanelComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,

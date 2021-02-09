@@ -1,0 +1,17 @@
+<p>Najwyżej ocenione: </p>
+<div class="places" *ngIf="places">
+  <li *ngFor="let place of places; index as i; first as isFirst">
+    <div class="place">
+      <div class="image">Zdjęcie: pusto</div>
+      <div class="name">"{{place.placeName}}"</div>
+      <div class="city">{{place.city}}</div>
+      <div class="rate">Średnia ocen: {{place.rate}}</div>
+      <div class="moreBtn">
+        <a routerLinkActive="active" [routerLink]="['/places', place.id]">więcej...</a>
+      </div>
+    </div>
+  </li>
+</div>
+
+<a routerLinkActive="active"
+   routerLink="/places">Powrót</a>

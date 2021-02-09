@@ -1,0 +1,5 @@
+<li *ngFor="let city of cities; index as i; first as isFirst">
+  <a routerLinkActive="active" [routerLink]="['/places/pl', city]">
+    <div class="cityBtn gradient-border-a">{{city}}</div>
+  </a>
+</li>
